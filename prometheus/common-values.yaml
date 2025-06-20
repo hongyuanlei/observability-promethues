@@ -1,6 +1,6 @@
 grafana:
   enabled: true
-  adminPassword: prom-1234
+  adminPassword: admin-1234
 
 prometheus:
   prometheusSpec:
