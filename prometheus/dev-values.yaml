@@ -1,0 +1,43 @@
+prometheusOperator:
+  enabled: true
+
+alertmanager:
+  enabled: true
+
+grafana:
+  enabled: true
+  adminPassword: admin-1234
+  admin:
+    existingSecret: ""
+
+prometheus:
+  enabled: true
+  prometheusSpec:
+    retention: 15d
+    ruleNamespaceSelector: {}
+    ruleSelectorNilUsesHelmValues: false
+    ruleSelector: {}
+    serviceMonitorSelectorNilUsesHelmValues: false
+    serviceMonitorSelector: {}
+    serviceMonitorNamespaceSelector: {}
+    podMonitorSelectorNilUsesHelmValues: false
+    podMonitorSelector: {}
+    podMonitorNamespaceSelector: {}
+    probeSelectorNilUsesHelmValues: false
+    probeSelector: {}
+    probeNamespaceSelector: {}
+    scrapeConfigSelectorNilUsesHelmValues: false
+    scrapeConfigSelector: {}
+    scrapeConfigNamespaceSelector: {}
+
+    resources:
+      requests:
+        cpu: 200m
+        memory: 512Mi
+    storageSpec:
+      volumeClaimTemplate:
+        spec:
+          accessModes: ["ReadWriteOnce"]
+          resources:
+            requests:
+              storage: 20Gi
