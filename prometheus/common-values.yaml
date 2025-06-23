@@ -11,6 +11,7 @@ grafana:
     existingSecret: ""
 
 prometheus:
+  enabled: true
   prometheusSpec:
     retention: 15d
     serviceMonitorSelectorNilUsesHelmValues: false
