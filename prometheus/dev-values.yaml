@@ -10,6 +10,12 @@ kube-prometheus-stack:
     adminPassword: admin-1234
     admin:
       existingSecret: ""
+    sidecar:
+      dashboards:
+        enabled: true
+        label: grafana_dashboard
+        labelValue: "true"  # Optional if you just match presence of label
+        searchNamespace: ALL  # or specific namespace
 
   prometheus:
     enabled: true
