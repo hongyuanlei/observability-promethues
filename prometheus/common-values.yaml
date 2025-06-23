@@ -15,6 +15,10 @@ prometheus:
     retention: 15d
     serviceMonitorSelectorNilUsesHelmValues: false
     ruleNamespaceSelector: {}
+    ruleSelector:
+      matchExpressions:
+        - key: sendtomimir
+          operator: DoesNotExist
     resources:
       requests:
         cpu: 200m
