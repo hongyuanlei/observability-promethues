@@ -2,7 +2,7 @@
 # Refer to the value template: https://github.com/prometheus-community/helm-charts/blob/53fc5e36d4f46f4784a05720eae0eef87c90b5bc/charts/kube-prometheus-stack/values.yaml
 kube-prometheus-stack:
   nameOverride: prometheus
-  namespaceOverride: prometheus
+  fullnameOverride: prometheus
   prometheusOperator:
     enabled: true
 
