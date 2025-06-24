@@ -6,7 +6,7 @@ kube-prometheus-stack:
     enabled: true
 
   grafana:
-    enabled: true
+    enabled: false
     adminPassword: admin-1234
     admin:
       existingSecret: ""
