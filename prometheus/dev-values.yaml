@@ -19,6 +19,7 @@ kube-prometheus-stack:
 
   prometheus:
     enabled: true
+    name: prometheus
     prometheusSpec:
       retention: 15d
       ruleNamespaceSelector: {}
