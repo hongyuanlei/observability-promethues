@@ -12,7 +12,8 @@ data:
       - name: Prometheus
         type: prometheus
         access: proxy
-        url: http://prometheus.observability.svc.cluster.local
+        uid: 464EDC8622694ECA9847
+        url: http://prometheus-prometheus.observability:9090
         isDefault: false
         jsonData:
           timeInterval: 30s
