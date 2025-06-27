@@ -1,0 +1,5 @@
+prometheus-pushgateway:
+  nameOverride: "prometheus-pushgateway"
+
+  # Provide a name to substitute for the full names of resources
+  fullnameOverride: "prometheus-pushgateway"
