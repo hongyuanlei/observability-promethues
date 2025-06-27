@@ -56,4 +56,4 @@ kube-prometheus-stack:
                 storage: 20Gi
 
       remoteWrite:
-        url: http://mimir-nginx.observability/api/v1/push/
+      - url: http://mimir-nginx.observability/api/v1/push/
